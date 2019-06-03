@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Articale from './Articale/Articale';
-import { Router, Route, browserHistory } from 'react-router'
 import ArticaleHeader from './Articale/ArticaleComponent/ArticaleHeader'
-import { Container, Row, Col } from 'reactstrap';
+import BasicTable from './Project_Traker/detail_sheet'
+import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 
 class App extends Component {
   
@@ -11,15 +10,7 @@ class App extends Component {
     return (
        <div className="App">
        <ArticaleHeader/>
-          <Container>
-                <Row>
-                  <Col >
-                    <Articale/>
-                    
-                  </Col>
-                </Row>
-                
-          </Container>
+       <BasicTable/>
      
       </div>
     )
